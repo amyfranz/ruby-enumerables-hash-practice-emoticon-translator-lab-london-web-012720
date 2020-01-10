@@ -4,9 +4,8 @@ def load_library (file_path)
   library = YAML.load_file(file_path)
   new_hash = {:get_meaning => {}, :get_emoticon =>{}}
   library.each_key do |meaning|
-    emoticon = library[meaning][1]
-    #new_hash[:get_meaning][meaning] = []
-    new_hash[:get_meaning][emoticon] = meaning
+    japanese_emoticon = library[meaning][1]
+    new_hash[:get_meaning][japanese_emoticon] = meaning
   end
   return new_hash
 end
