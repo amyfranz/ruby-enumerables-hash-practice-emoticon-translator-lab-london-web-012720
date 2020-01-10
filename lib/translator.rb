@@ -9,10 +9,10 @@ def load_library (file_path)
     new_hash[:get_meaning][japanese_emoticon] = meaning
     new_hash[:get_emoticon][english_emoticon] = japanese_emoticon
   end
-  return new_hash(file_path, emoticon)
+  return new_hash
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(file_path, emoticon)
   library = YAML.load_file(file_path)
 end
 
