@@ -6,6 +6,8 @@ def load_library (file_path)
   library.each_key do |meaning|
     japanese_emoticon = library[meaning][1]
     new_hash[:get_meaning][japanese_emoticon] = meaning
+    japanese_emoticon = library[meaning][1]
+    new_hash[:get_emoticon][japanese_emoticon] = meaning
   end
   return new_hash
 end
