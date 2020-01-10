@@ -7,7 +7,7 @@ def load_library (file_path)
     japanese_emoticon = library[meaning][1]
     new_hash[:get_meaning][japanese_emoticon] = meaning
     english_emoticon = library[meaning][0]
-    new_hash[:get_emoticon][english_emoticon] = {}
+    new_hash[:get_emoticon][english_emoticon] = japanese_emoticon
   end
   return new_hash
 end
