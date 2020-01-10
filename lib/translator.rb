@@ -7,6 +7,7 @@ def load_library (file_path)
     emoticon = library[meaning][1]
     #new_hash[:get_meaning][meaning] = []
     new_hash[:get_meaning][meaning] = emoticon
+    puts 1
     #new_hash[:get_emoticon] >> library[meaning]
   end
   return new_hash
