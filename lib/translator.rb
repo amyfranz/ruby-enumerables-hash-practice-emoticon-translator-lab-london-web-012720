@@ -6,7 +6,7 @@ def load_library (file_path)
   library.each_key do |meaning|
     emoticon = library[meaning][1]
     #new_hash[:get_meaning][meaning] = []
-    new_hash[:get_meaning][emoticon] => {}
+    new_hash[:get_meaning][emoticon] = {}
     puts new_hash[:get_meaning][meaning]
     #new_hash[:get_emoticon] >> library[meaning]
   end
